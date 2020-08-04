@@ -19,10 +19,11 @@ body {
     font-weight: 400;
     background-color: $color-bg;
     color: $color-grey;
+}
+.container {
     max-width: 114rem;
     margin: 0 auto ;
 }
-
 // Change selection color
 ::selection {
     background-color: $color-primary;
