@@ -15,12 +15,14 @@ body {
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: 400;
   background-color: #0a192f;
-  color: #8892b0;
+  color: #8892b0; }
+
+.container {
   max-width: 114rem;
   margin: 0 auto; }
 
 ::selection {
-  background-color: #6bf3da;
+  background-color: #00cf5d;
   color: #ccd6f6; }
 
 .btn, .btn:link, .btn:visited {
@@ -64,6 +66,24 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #00cf5d;
+  display: inline-block;
+  padding: 3px;
+  transition: all .2s;
+  border-bottom: 1px solid #00cf5d; }
+
+.btn-text:hover {
+  transform: translateY(-2px);
+  background-color: #00cf5d;
+  color: #000;
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn-text:active {
+  transform: translate(0); }
+
 @keyframes moveToTop {
   0% {
     opacity: 0;
@@ -71,6 +91,21 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+.section__title {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  padding: 2rem 0;
+  color: #ccd6f6; }
+  .section__title::after {
+    position: absolute;
+    content: '';
+    right: -100%;
+    top: 50%;
+    width: 90%;
+    height: 1px;
+    background: #8892b0; }
 
 .header {
   display: flex;
@@ -90,3 +125,57 @@ body {
     margin-bottom: 4rem; }
   .header__img img {
     max-width: 50rem; }
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  width: 55%; }
+
+.advantages__item {
+  cursor: move;
+  transition: all .2s linear; }
+  .advantages__item:hover {
+    color: #ccd6f6; }
+
+.advertise {
+  width: 86%; }
+  .advertise__video {
+    width: 100%; }
+
+.video {
+  display: flex;
+  justify-content: space-between; }
+  .video__item {
+    width: 33.33%;
+    margin-right: 2rem; }
+    .video__item--src {
+      width: 100%;
+      height: 300px; }
+
+.about__content {
+  display: flex;
+  justify-content: space-between; }
+  .about__content--box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10rem; }
+  .about__content--img {
+    width: 400px;
+    height: 300px; }
+
+.banner {
+  width: 100%;
+  margin: 2rem auto;
+  background: #172a45;
+  color: #ccd6f6;
+  padding: 5rem 20rem;
+  text-align: center; }
+  .banner__content--body {
+    padding: 2rem 0; }
+
+.footer {
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.8rem;
+  color: #ccd6f6; }

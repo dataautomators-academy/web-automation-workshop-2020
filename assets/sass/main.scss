@@ -3,6 +3,25 @@
 @import "./button";
 @import "./animation";
 
+// Global Styles
+.section__title {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem 0;
+    color: $color-white;
+    
+    &::after {
+        position: absolute;
+    content: '';
+    right: -100%;
+    top: 50%;
+    width: 90%;
+    height: 1px;
+    background:$color-grey;
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -33,12 +52,80 @@
 
 
 // Advantages Section
+.advantages {
+    &__list {
+        margin: 0;
+        padding: 0;
+        width: 55%;
+    }
+    &__item {
+        cursor: move;
+        transition: all .2s linear;
+        
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+// Advertise
+.advertise {
+    width: 86%;
+    &__video {
+        width: 100%;
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: space-between;
+
+    &__item  {
+        width: 33.33%;
+        margin-right: 2rem;
+        &--src {
+            width: 100%;
+            height: 300px;
+        }
+    }
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+        &--box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 10rem;
+        }
+        &--img {
+            width: 400px;
+            height: 300px;
+        }
+    }
+
+.banner {
+    width: 100%;
+    margin: 2rem auto;
+    background: $color-bg-light;
+    color:$color-white;
+    padding: 5rem 20rem;
+    text-align: center;
+
+    &__content--body {
+        padding: 2rem 0;
+    }
+
+}
 
 
-
-
-
-
+.footer {
+    text-align: center;
+    padding: 5rem;
+    font-size: 1.8rem;
+    color:$color-white;
+}
 
 
 
