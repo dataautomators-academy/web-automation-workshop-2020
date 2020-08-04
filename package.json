@@ -1,0 +1,33 @@
+
+{
+    "name": "web-automation",
+    "version": "1.0.0",
+    "description": "A landing page for Web Automation Workshop by CodeEatingAnts",
+    "author": "Shaon Kabir <shaonkabir98@gmail.com>",
+    "main": "index.js",
+    "scripts": {
+      "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+      "dev": "npm-run-all --parallel  watch:sass",
+  
+      "compile:sass": "node-sass assets/sass/main.scss assets/css/style.compiled.css",
+      "concat:css": "concat -o assets/css/style.concat.css  assets/css/style.compiled.css",
+      "prefix:css": "postcss assets/css/style.concat.css --use=autoprefixer  --output=assets/css/style.prefix.css",
+      "minify:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+      "build": "npm-run-all compile:sass concat:css prefix:css minify:css"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/code-eating-ants/web-automation-workshop-7th-aug-2020.git"
+    },
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/code-eating-ants/web-automation-workshop-7th-aug-2020/issues"
+    },
+    "devDependencies": {
+      "autoprefixer": "^9.7.4",
+      "concat": "^1.0.3",
+      "node-sass": "^4.13.1",
+      "npm-run-all": "^4.1.5",
+      "postcss-cli": "^7.1.0"
+    }
+  }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600&display=swap');
+
+// Colors
+$color-bg: #0a192f;
+$color-primary: #6bf3da;
+$color-grey: #8892b0;
+$color-white: #ccd6f6;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
+    background-color: $color-bg;
+    color: $color-grey;
+    max-width: 114rem;
+    margin: 0 auto ;
+}
