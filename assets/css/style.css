@@ -14,16 +14,16 @@ body {
   font-size: 1.7rem;
   font-family: 'Hind Siliguri', sans-serif;
   font-weight: 400;
-  background-color: #0a192f;
-  color: #8892b0; }
+  background-color: #5548b0;
+  color: #d5ceed; }
 
 .container {
   max-width: 114rem;
   margin: 0 auto; }
 
 ::selection {
-  background-color: #00cf5d;
-  color: #ccd6f6; }
+  background-color: #c88f86;
+  color: #fff; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -69,15 +69,15 @@ body {
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #00cf5d;
+  color: #c88f86;
   display: inline-block;
   padding: 3px;
   transition: all .2s;
-  border-bottom: 1px solid #00cf5d; }
+  border-bottom: 1px solid #c88f86; }
 
 .btn-text:hover {
   transform: translateY(-2px);
-  background-color: #00cf5d;
+  background-color: #c88f86;
   color: #000;
   box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.15); }
 
@@ -97,7 +97,7 @@ body {
   position: relative;
   font-size: 3rem;
   padding: 2rem 0;
-  color: #ccd6f6; }
+  color: #fff; }
   .section__title::after {
     position: absolute;
     content: '';
@@ -105,7 +105,7 @@ body {
     top: 50%;
     width: 90%;
     height: 1px;
-    background: #8892b0; }
+    background: #d5ceed; }
 
 .header {
   display: flex;
@@ -114,7 +114,7 @@ body {
   height: 100vh; }
   .header__title {
     font-size: 6rem;
-    color: #ccd6f6; }
+    color: #fff; }
     .header__title--span {
       display: block;
       line-height: 4.1rem;
@@ -135,7 +135,7 @@ body {
   cursor: move;
   transition: all .2s linear; }
   .advantages__item:hover {
-    color: #ccd6f6; }
+    color: #fff; }
 
 .advertise {
   width: 86%; }
@@ -165,17 +165,28 @@ body {
     height: 300px; }
 
 .banner {
+  position: relative;
+  z-index: 1;
   width: 100%;
   margin: 2rem auto;
-  background: #172a45;
-  color: #ccd6f6;
+  color: #fff;
   padding: 5rem 20rem;
   text-align: center; }
   .banner__content--body {
     padding: 2rem 0; }
+  .banner::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #7f6dd8;
+    opacity: .6;
+    z-index: -1; }
 
 .footer {
   text-align: center;
   padding: 5rem;
   font-size: 1.8rem;
-  color: #ccd6f6; }
+  color: #fff; }
