@@ -96,6 +96,46 @@ body {
 .about__content {
   justify-content: space-between;
   align-items: center; }
+  .about__content--img-item {
+    width: 100%;
+    height: auto;
+    position: relative; }
+  .about__content .social-share {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    width: 44.6rem;
+    height: 6.5rem;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    bottom: 0px;
+    visibility: hidden; }
+    .about__content .social-share::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #7f6dd8;
+      opacity: 0.9;
+      z-index: -1; }
+    .about__content .social-share__link {
+      display: block;
+      padding: 1rem;
+      margin: 0 0.5rem;
+      background: #5548b0; }
+      .about__content .social-share__link:hover {
+        border-radius: 100px;
+        transition: all 0.3s linear; }
+    .about__content .social-share__icon {
+      width: 3rem;
+      height: 3rem; }
+  .about__content--img:hover .social-share {
+    visibility: visible;
+    transition: visibility 0.3s linear; }
 
 .banner {
   position: relative;
