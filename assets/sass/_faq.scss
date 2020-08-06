@@ -1,0 +1,12 @@
+.faq {
+  &__content {
+    summary {
+      margin-top: 10px;
+      outline: none;
+    }
+  }
+  &__desc {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}

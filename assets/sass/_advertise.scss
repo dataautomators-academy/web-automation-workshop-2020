@@ -1,0 +1,46 @@
+// Advertise
+
+.video {
+  &__item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--src {
+      width: initial;
+    }
+  }
+}
+
+.about__content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 2rem auto;
+  // background: $color-bg-light;
+  color: $color-white;
+  padding: 5rem 0;
+  text-align: center;
+
+  &__content--body {
+    padding: 2rem 0;
+  }
+
+  // Test Purpose
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-bg-light;
+    opacity: 0.6;
+    z-index: -1;
+  }
+}
