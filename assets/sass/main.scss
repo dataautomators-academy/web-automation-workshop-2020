@@ -5,166 +5,191 @@
 
 // Global Styles
 .section__title {
-    display: inline-block;
-    position: relative;
-    font-size: 3rem;
-    padding: 2rem 0;
-    color: $color-white;
-    
-    &::after {
-        position: absolute;
-    content: '';
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  padding: 2rem 0;
+  color: $color-white;
+
+  &::after {
+    position: absolute;
+    content: "";
     right: -100%;
     top: 50%;
     width: 90%;
     height: 1px;
-    background:$color-grey;
-    }
+    background: $color-grey;
+  }
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    &__title {
-        font-size: 6rem;
-        color:$color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  &__title {
+    font-size: 6rem;
+    color: $color-white;
 
-        &--span {
-            display: block;
-            line-height: 4.1rem;
-            margin-bottom: 3rem;
-        }
+    &--span {
+      display: block;
+      line-height: 4.1rem;
+      margin-bottom: 3rem;
     }
-    
-    &__content {
-        line-height: 1.6;
-        padding-right: 5rem;
-        margin-bottom: 4rem;
-    }
+  }
 
-    &__img img {
-        max-width: 50rem;
-    }
+  &__content {
+    line-height: 1.6;
+    padding-right: 5rem;
+    margin-bottom: 4rem;
+  }
 
+  &__img img {
+    max-width: 50rem;
+  }
 }
-
 
 // Advantages Section
 .advantages {
-    &__list {
-        margin: 0;
-        padding: 0;
-        width: 55%;
-    }
-    &__item {
-        cursor: move;
-        transition: all .2s linear;
-        
-        &:hover {
-            color: $color-white;
-        }
-    }
+  margin-bottom: 100px;
+}
+
+.facility-description {
+  justify-content: space-between;
+}
+.marketing-box {
+  margin-top: 20px;
+  flex: 0 0 32%;
+  padding: 30px 10px;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px -8px black;
+  border-radius: 8px;
+  &__logo img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 16px;
+    padding: 20px 0;
+  }
+  &__desc {
+    font-size: 14px;
+    text-align: center;
+  }
+  &:hover {
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 // Advertise
 .advertise {
-    width: 86%;
-    &__video {
-        width: 100%;
-    }
+  width: 86%;
+  &__video {
+    width: 100%;
+  }
 }
 
 .video {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    &__item  {
-        width: 33.33%;
-        margin-right: 2rem;
-        &--src {
-            width: 100%;
-            height: 300px;
-        }
+  &__item {
+    width: 33.33%;
+    margin-right: 2rem;
+    &--src {
+      width: 100%;
+      height: 300px;
     }
+  }
 }
 
 .about__content {
+  display: flex;
+  justify-content: space-between;
+  &--box {
     display: flex;
-    justify-content: space-between;
-        &--box {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 10rem;
-        }
-        &--img {
-            width: 400px;
-            height: 300px;
-        }
-    }
+    justify-content: center;
+    align-items: center;
+    padding-right: 10rem;
+  }
+  &--img {
+    width: 400px;
+    height: 300px;
+  }
+}
 
 .banner {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 2rem auto;
+  // background: $color-bg-light;
+  color: $color-white;
+  padding: 5rem 20rem;
+  text-align: center;
+
+  &__content--body {
+    padding: 2rem 0;
+  }
+
+  // Test Purpose
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
     width: 100%;
-    margin: 2rem auto;
-    // background: $color-bg-light;
-    color:$color-white;
-    padding: 5rem 20rem;
-    text-align: center;
-
-    &__content--body {
-        padding: 2rem 0;
-    }
-
-    // Test Purpose
-    &::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        background: $color-bg-light;
-        opacity: .6;
-        z-index: -1;
-    }
-
+    height: 100%;
+    background: $color-bg-light;
+    opacity: 0.6;
+    z-index: -1;
+  }
 }
 
+.faq {
+  &__content {
+    summary {
+      margin-top: 10px;
+      outline: none;
+    }
+  }
+  &__desc {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
 
 .footer {
-    text-align: center;
-    padding: 5rem;
-    font-size: 1.8rem;
-    color:$color-white;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.8rem;
+  color: $color-white;
+  background-color: $color-bg-light;
+  margin-top: 50px;
+  &--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &--social-area {
+    padding: 10px 0 30px 0;
+  }
+  &--header{
+    &__text {
+      font-size: 35px;
+      font-weight: 800;
+    }
+  }
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

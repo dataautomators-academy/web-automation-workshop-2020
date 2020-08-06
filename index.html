@@ -1,126 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <title>Code Eating Ants | WorkShop</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header__hero-area">
-                <h1 class="header__title">ওয়েব অটোমেশন <span class="header__title--span"> অনলাইন ওয়ার্কশপ</span></h1>
-                <p class="header__content">
-                    আপনি ওয়েব ডেভেলপার, ফ্রন্টএন্ড ডেভেলপার, ইউআই টেস্টার, ডাটা এন্ট্রি, ওয়েব রিসার্চ, ইত্যাদি যেই কাজই
-                    করেন না কেন , প্রোগ্রামিং জানা থাকা স্বত্ত্বেও অটোমেশনের যুগে বোরিং কাজগুলা ম্যানুয়ালি করার কোন মানে হয় না।
-                    <br> ওয়েব অটোমেশনের মাধ্যমে আপনি প্রায় দশ গুণ কাজ করতে পারবেন, প্রচুর সময় বাঁচাতে পারবেন, জটিল জটিল সব
-                    কাজ করতে পারবেন যেগুলা হাতে করতে গেলেও অনেক সময় সম্ভব না <br>
-                    তো ভাবনা কেন ? আজ ই জয়েন করুন।
-                </p>
-                <a href="#" class="btn">অনলাইন ওয়ার্কশপে জয়েন করুন <span class="arrow__icon">&#8594;</span></a>
-            </div>
-            <div class="header__img">
-                <img src="assets/img/bg.png" alt="Hero Image">
-            </div>
-        </header>
-
-        <section class="advantages">
-            <h3 class="section__title">যা শিখতে পারবেনঃ</h3>
-            <ul class="advantages__list">
-                <li class="advantages__item"> পাপেটার দিয়ে ওয়েব অটোমেশন কি, কেন, কিভাবে, খুঁটিনাটি </li>
-                <li class="advantages__item"> সিলেক্টর বের করে ডাটা কালেক্ট করা ও পেইজের ডাটাগুলো সেইভ করার অনেকগুলো উপায় </li>
-                <li class="advantages__item"> ভিপিএন ও প্রক্সির ব্যবহার করে নির্ধারিত দেশের ডাটা কালেক্ট করা </li>
-                <li class="advantages__item"> কুকি সেইভ করার অনেকগুলো উপায় ও কুকির মাধ্যমে লগিন করার উপায় </li>
-                <li class="advantages__item"> সহজে ক্যাপচা সলভ করা সহ কয়েকটি গুরুত্বপূর্ণ প্লাগিনের ব্যবহার </li>
-                <li class="advantages__item"> [প্রজেক্ট] হাজার হাজার ওয়েবসাইট হতে রেজেক্স দিয়ে মোবাইল নাম্বার ও ইমেইল এড্রেস বের করার উপায় </li>
-            </ul>
-    </div>
-    </section>
-    </div>
-    <section class="banner">
-        <div class="banner__content">
-            <h2 class="banner__content--heading">এক গুন পরিশ্রমে দশ গুন কাজ করুন।</h2>
-            <h3 class="banner__content--body">২ ঘন্টার করে মোট ৪ ঘন্টার ওয়ার্কশপে আপনি সরাসরি অংশগ্রহন করতে পারবেন গুগল
-                মিটের মাধ্যমে। প্রথম অংশ হবে বিগিনারদের জন্য, পরবর্তী অংশ হবে একটু এডভান্সডদের জন্য। মাঝে কিছু ছোট ছোট
-                বিরতি থাকবে। প্রতিটা সেগমেন্টের পরই প্রশ্নোত্তরের অংশ থাকবে।</h3>
-            <a href="#" class="btn-text">অনলাইন ওয়ার্কশপে জয়েন করুন <span class="arrow__icon">&#8594;</span></a>
+      <header class="header row">
+        <div class="header__hero-area col-md-6 col-sm-12">
+          <h1 class="header__title">
+            ওয়েব অটোমেশন
+            <span class="header__title--span"> অনলাইন ওয়ার্কশপ</span>
+          </h1>
+          <p class="header__content">
+            আপনি ওয়েব ডেভেলপার, ফ্রন্টএন্ড ডেভেলপার, ইউআই টেস্টার, ডাটা এন্ট্রি,
+            ওয়েব রিসার্চ, ইত্যাদি যেই কাজই করেন না কেন , প্রোগ্রামিং জানা থাকা
+            স্বত্ত্বেও অটোমেশনের যুগে বোরিং কাজগুলা ম্যানুয়ালি করার কোন মানে হয়
+            না।
+            <br />
+            ওয়েব অটোমেশনের মাধ্যমে আপনি প্রায় দশ গুণ কাজ করতে পারবেন, প্রচুর সময়
+            বাঁচাতে পারবেন, জটিল জটিল সব কাজ করতে পারবেন যেগুলা হাতে করতে গেলেও
+            অনেক সময় সম্ভব না <br />
+            তো ভাবনা কেন ? আজ ই জয়েন করুন।
+          </p>
+          <a href="#" class="btn"
+            >অনলাইন ওয়ার্কশপে জয়েন করুন
+            <span class="arrow__icon">&#8594;</span></a
+          >
         </div>
+        <div class="header__img col-md-6 col-sm-12">
+          <img src="assets/img/bg.png" alt="Hero Image" />
+        </div>
+      </header>
+
+      <section class="advantages">
+        <h3 class="section__title">যা শিখতে পারবেনঃ</h3>
+        <div class="container">
+          <div class="facility-description row">
+            <div class="marketing-box col-md-4 col-sm-12 col-xs-12">
+              <div class="marketing-box__logo">
+                <img
+                  src="assets/img/automate.png"
+                  alt="Automate"
+                  class="automate"
+                />
+              </div>
+              <div class="marketing-box__title">ওয়েব অটোমেশন</div>
+              <div class="marketing-box__desc">
+                ওয়েব অটোমেশন কি, কেন, কিভাবে এবং এর খুটিনাটি সম্পর্কে বিস্তারিত
+                আলোচনা।
+              </div>
+            </div>
+            <div class="marketing-box col-md-4 col-sm-12 col-xs-12">
+              <div class="marketing-box__logo">
+                <img
+                  src="assets/img/puppeteer.png"
+                  alt="Puppeteer"
+                  class="puppeteer"
+                />
+              </div>
+              <div class="marketing-box__title">পাপেটার</div>
+              <div class="marketing-box__desc">
+                পাপেটার কি, কেন, কিভাবে এবং এর খুটিনাটি সম্পর্কে বিস্তারিত
+                আলোচনা।
+              </div>
+            </div>
+            <div class="marketing-box col-md-4 col-sm-12 col-xs-12">
+              <div class="marketing-box__logo">
+                <img
+                  src="assets/img/database.png"
+                  alt="Database"
+                  class="database"
+                />
+              </div>
+              <div class="marketing-box__title">পেইজের ডেটা সেভিং</div>
+              <div class="marketing-box__desc">
+                ওয়েব হতে ডেটা নিয়ে সেগুলা প্রসেসিং করে স্টোরেজে সেইভ করার টেকনিক
+                সম্পর্কে বিস্তারিত আলোচনা।
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 offset-md-2 mr-md-5 marketing-box">
+              <div class="marketing-box__logo">
+                <img
+                  src="assets/img/project.png"
+                  alt="Live Project"
+                  class="project"
+                />
+              </div>
+              <div class="marketing-box__title">লাইভ প্রজেক্ট</div>
+              <div class="marketing-box__desc">
+                হাজার হাজার ওয়েবসাইট হতে রেজেক্স দিয়ে মোবাইল নাম্বার, ইমেইল বের
+                করা এবং আরও কিছু ট্রিকস নিয়ে রিয়েল প্রজেক্ট দেখার সুযোগ।
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12 mr-md-auto marketing-box">
+              <div class="marketing-box__logo">
+                <img
+                  src="assets/img/freelance.png"
+                  alt="Freelance"
+                  class="freelance"
+                />
+              </div>
+              <div class="marketing-box__title">জব ও ফ্রিলান্সিং</div>
+              <div class="marketing-box__desc">
+                জব ও ফ্রিল্যান্সিং মার্কেটে ওয়েব অটোমেশনের চাহিদা সম্পর্কে
+                বিস্তারিত আলোচনা।
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="banner">
+      <div class="banner__content">
+        <h2 class="banner__content--heading">
+          এক গুন পরিশ্রমে দশ গুন কাজ করুন।
+        </h2>
+        <h3 class="banner__content--body">
+          ২ ঘন্টার করে মোট ৪ ঘন্টার ওয়ার্কশপে আপনি সরাসরি অংশগ্রহন করতে পারবেন
+          গুগল মিটের মাধ্যমে। প্রথম অংশ হবে বিগিনারদের জন্য, পরবর্তী অংশ হবে
+          একটু এডভান্সডদের জন্য। মাঝে কিছু ছোট ছোট বিরতি থাকবে। প্রতিটা
+          সেগমেন্টের পরই প্রশ্নোত্তরের অংশ থাকবে।
+        </h3>
+        <a href="#" class="btn-text"
+          >অনলাইন ওয়ার্কশপে জয়েন করুন
+          <span class="arrow__icon">&#8594;</span></a
+        >
+      </div>
     </section>
     <div class="container">
-        <section class="video-section">
-            <h3 class="section__title">ওয়েব অটোমেশন নিয়ে কিছু কথা </h3>
-            <div class="video">
-                <div class="video__item">
-                    <div class="fb-video video__item--src"
-                        data-href="https://www.facebook.com/entrptaher/videos/2721173014833715" data-show-text="false"
-                        data-width="">
-                    </div>
-                </div>
-                <div class="video__item">
-                    <div class="fb-video video__item--src"
-                        data-href="https://www.facebook.com/entrptaher/videos/2732721190345564/" data-show-text="false"
-                        data-width="">
-                    </div>
-                </div>
-                <div class="video__item">
-                    <div class="fb-video video__item--src"
-                        data-href="https://www.facebook.com/entrptaher/videos/2705834919700858/" data-show-text="false"
-                        data-width="">
-                    </div>
-                </div>
-            </div>
-        </section>
+      <section class="video-section">
+        <h3 class="section__title">ওয়েব অটোমেশন নিয়ে কিছু কথা</h3>
+        <div class="video">
+          <div class="video__item">
+            <div
+              class="fb-video video__item--src"
+              data-href="https://www.facebook.com/entrptaher/videos/2721173014833715"
+              data-show-text="false"
+              data-width=""
+            ></div>
+          </div>
+          <div class="video__item">
+            <div
+              class="fb-video video__item--src"
+              data-href="https://www.facebook.com/entrptaher/videos/2732721190345564/"
+              data-show-text="false"
+              data-width=""
+            ></div>
+          </div>
+          <div class="video__item">
+            <div
+              class="fb-video video__item--src"
+              data-href="https://www.facebook.com/entrptaher/videos/2705834919700858/"
+              data-show-text="false"
+              data-width=""
+            ></div>
+          </div>
+        </div>
+      </section>
 
-        <section class="about">
-            <h3 class="section__title">আমার সম্পর্কে</h3>
-            <div class="about__content">
-                <div class="about__content--box">
-                    <p>দুনিয়া চলে-- আর্টিফিসিয়াল আর্জেন্সি দিয়ে। ধরো, তোমার ফোন এ একটা কল আসলো। সাথে সাথে তোমার ফোনের
-                        রিংটোন
-                        বেজে উঠলো। রিংটোন বাজা মানে, তোমার চোখ চলে গেলো ফোনের দিকে। কে ফোন দিলো? কেন ফোন দিলো? এইসব
-                        চিন্তা
-                        করতে
-                        করতে তোমার এটেনশন চলে গেলো ফোনের দিকে। দুনিয়া চলে-- আর্টিফিসিয়াল আর্জেন্সি <br>দিয়ে। ধরো, তোমার
-                        ফোন এ একটা কল আসলো। সাথে সাথে তোমার ফোনের রিংটোন
-                        বেজে উঠলো। রিংটোন বাজা মানে, তোমার চোখ চলে গেলো ফোনের দিকে। কে ফোন দিলো? কেন ফোন দিলো? এইসব
-                        চিন্তা
-                        করতে
-                        করতে তোমার এটেনশন চলে গেলো ফোনের দিকে।</p>
+      <section class="about">
+        <h3 class="section__title">আমার সম্পর্কে</h3>
+        <div class="about__content">
+          <div class="about__content--box">
+            <p>
+              আমি একজন ফুলস্টাক ওয়েব ডেভেলোপার। ওপেন সোর্স কন্ট্রিবিউটর। ওয়েব
+              অটোমেশন, প্রোগ্রামিং নিয়ে আগ্রহী এবং স্পেশালি জাভাস্ক্রিপ্ট নিয়ে
+              কাজ করছি। এখন বর্তমানে Vanila.io কম্পানীতে ফুলস্টাক ওয়েব
+              ডেভেলোপার হিসেবে কর্মরত আছি। Automatio.co নামের একটা অটোমেশন
+              প্রজেক্টে কো-ফাউন্ডার হিসেবে আছি। ওয়েব অটোমেশনকে খুব বেশী
+              ভালোবাসি তাই যখন লক্ষ্য করে দেখলাম আমাদের দেশে এটা নিয়ে খুব বেশী
+              একটা চর্চা হচ্ছে না তাই এটা নিয়ে আগ্রহীদেরকে শিখতে সাহায্য শুরু
+              করি। আমি আশা করি এটা শিখে চর্চার মাধ্যমে তারা তাদের লক্ষ্যে
+              পৌছাতে পারবে।
+            </p>
 
-                    <!-- <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+            <!-- <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social__link"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social__link"><i class="fab fa-github"></i></a>
                 <a href="#" class="social__link"><i class="fab fa-youtube"></i></a>
                 <a href="#" class="social__link"><i class="fab fa-linkedin"></i></a> -->
-                </div>
-                <img src="assets/img/taher_vai.jpg" alt="Abu Taher Image" class="about__content--img">
-            </div>
-        </section>
+          </div>
+          <img
+            src="assets/img/taher.png"
+            alt="Abu Taher Image"
+            class="about__content--img"
+          />
+        </div>
+      </section>
 
-        <section class="faq">
-            <h3 class="section__title">সচারচার জিজ্ঞাসাকৃত প্রশ্নসমূহ</h3>
-            <div class="faq__content">
-                <details>
-                    <summary>ওয়ার্কশপে কারা জয়েন করতে পারবে?</summary>
-                    <div>ওয়ার্কশপ টি করার জন্য আপনাকে অবশ্যই <span> জাভাস্ক্রিপ্ট </span> জানতে হবে।
-                        আপনি যদি জাভাস্ক্রিপ্ট কোড লিখতে মোটামুটি সাচ্ছন্দবোধ করেন তবে এই ওয়ার্কশপ টি করার জন্য আপনি
-                        প্রস্তুত। </div>
-                </details>
-                <details>
-                    <summary>ওয়েব অটোমেশন কেন ব্যবহার করবো?</summary>
-                    <div>ওয়েব অটোমেশনের মাধ্যমে আপনি প্রায় দশ গুণ কাজ করতে পারবেন, প্রচুর সময় বাঁচাতে পারবেন, জটিল জটিল
-                        সব কাজ করতে পারবেন যেগুলা হাতে করতে গেলেও অনেক সময় সম্ভব না, কয়েকশ গুণ দামি সার্ভার দিয়ে এমন সব
-                        কাজ করতে পারবেন যা পঁচা কম্পিউটার দিয়ে করা সম্ভব না।</div>
-                </details>
+      <section class="faq">
+        <h3 class="section__title">সচারচার জিজ্ঞাসাকৃত প্রশ্নসমূহ</h3>
+        <div class="faq__content">
+          <details>
+            <summary>ওয়ার্কশপে কারা জয়েন করতে পারবে?</summary>
+            <div class="faq__desc">
+              ওয়ার্কশপ টি করার জন্য আপনাকে অবশ্যই জাভাস্ক্রিপ্ট জানতে হবে। আপনি
+              যদি জাভাস্ক্রিপ্ট কোড লিখতে মোটামুটি সাচ্ছন্দবোধ করেন তবে এই
+              ওয়ার্কশপ টি করার জন্য আপনি প্রস্তুত।
             </div>
-        </section>
-        <footer class="footer ">
-            <p>All right Reserved, 2020 @CodeEatingAnts</p>
-        </footer>
+          </details>
+          <details>
+            <summary>ওয়েব অটোমেশন কেন ব্যবহার করবো?</summary>
+            <div class="faq__desc">
+              ওয়েব অটোমেশনের মাধ্যমে আপনি প্রায় দশ গুণ কাজ করতে পারবেন, প্রচুর
+              সময় বাঁচাতে পারবেন, জটিল জটিল সব কাজ করতে পারবেন যেগুলা হাতে করতে
+              গেলেও অনেক সময় সম্ভব না, কয়েকশ গুণ দামি সার্ভার দিয়ে এমন সব কাজ
+              করতে পারবেন যা পঁচা কম্পিউটার দিয়ে করা সম্ভব না।
+            </div>
+          </details>
+        </div>
+      </section>
     </div>
+    <section id="footer">
+      <div class="container-fluid footer">
+        <footer class="footer--box">
+          <div class="footer--header">
+            <p class="footer--header__text">
+              এখনি আপনার সিট বুক করে জয়েন করে ফেলুন
+            </p>
+          </div>
+          <div class="footer--join-button">
+            <a href="#" class="btn btn-footer"
+              >অনলাইন ওয়ার্কশপে জয়েন করুন
+              <span class="arrow__icon">&#8594;</span></a
+            >
+          </div>
+
+          <div class="footer--social-area">
+            <a href="#">
+              <img
+                src="assets/img/facebook.png"
+                alt="Facebook"
+                class="footer__img"
+              />
+            </a>
+          </div>
+
+          <p class="footer--copyright">
+            All right Reserved, 2020 @CodeEatingAnts
+          </p>
+        </footer>
+      </div>
+    </section>
+
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
-        nonce="TnrpdIub"></script>
-</body>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
+      nonce="TnrpdIub"
+    ></script>
+    <script src="assets/javascript/jquery-3.5.1.min.js"></script>
+    <script src="assets/javascript/popper.min.js"></script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+  </body>
 </html>
