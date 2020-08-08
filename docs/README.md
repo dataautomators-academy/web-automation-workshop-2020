@@ -1,5 +1,8 @@
 # ওয়েব অটোমেশন অনলাইন ওয়ার্কশপ
 
+![GitHub contributors](https://img.shields.io/github/contributors/code-eating-ants/web-automation-workshop?style=for-the-badge)
+![Built With Love](assets/built-with-love.png)
+
 ![](assets/preview.png)
 
 ## ডেভেলপমেন্ট
