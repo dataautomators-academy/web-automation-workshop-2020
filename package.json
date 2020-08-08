@@ -1,28 +1,22 @@
 {
-  "name": "web-automation",
+  "name": "web-automation-workshop",
   "version": "1.0.0",
   "description": "A landing page for Web Automation Workshop by CodeEatingAnts",
+  "license": "MIT",
   "author": "Shaon Kabir <shaonkabir98@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
-    "server": "live-server",
-    "dev": "npm-run-all --parallel server watch:sass",
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.compiled.css",
-    "concat:css": "concat -o assets/css/style.concat.css  assets/css/style.compiled.css",
-    "prefix:css": "postcss assets/css/style.concat.css --use=autoprefixer  --output=assets/css/style.prefix.css",
-    "minify:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
-    "build": "npm-run-all compile:sass concat:css prefix:css minify:css"
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
   },
-  "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "concat": "^1.0.3",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0"
-  },
-  "dependencies": {
-    "live-server": "^1.2.1"
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-dist": "^0.0.6",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.26.10"
   }
 }
